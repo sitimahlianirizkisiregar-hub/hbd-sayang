@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Birthday baby! 💞</title>
+  <style>
+    :root {
+      --bg1: #fcb1bf;
+      --bg2: #ffe6ec;
+      --accent: #ff6b81;
+      --text-dark: #3a2c2c;
+      --card: #ffffffd9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'High Tower Text';
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+      overflow: hidden;
+      max-width: 900px;
+      width: 95%;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    header {
+      padding: 30px 20px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: var(--text-dark);
+    }
+    header p {
+      color: #6b4e4e;
+      font-size: 18px;
+      margin-top: 6px;
+    }
+    /* Galeri foto */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 14px;
+      transition: transform 0.8s ease, filter 0.8s ease;
+      filter: brightness(0.95);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.05);
+    }
+    .message {
+      padding: 28px 40px;
+      background: #fff8fa;
+      font-size: 18px;
+      color: var(--text-dark);
+      white-space: pre-wrap;
+      line-height: 1.6;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .signature {
+      font-style: italic;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    footer {
+      padding: 14px;
+      color: #6b4e4e;
+      font-size: 14px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+     /* Hati jatuh */
+    .heart {
+      position: fixed;
+      top: -10px;
+      color: rgba(255, 105, 135, 0.8);
+      font-size: 20px;
+      animation: fall 6s linear infinite;
+      z-index: 1;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hati Jatuh -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '💗';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+      heart.style.fontSize = (16 + Math.random() * 14) + 'px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+  <div class="card">
+    <header>
+      <h1>HAPPY BIRTHDAY GANTENGKU💖</h1>
+      <p>Ucapan dan doa untukmu dari aku sayang.</p>
+    </header>
+
+    <!-- Galeri 4 Foto -->
+    <div class="gallery">
+      <img src="nanantiti.JPEG" alt="Foto 1">
+      <img src="aa.JPEG" alt="Foto 2">
+      <img src="bebeb.JPG" alt="Foto 3">
+      <img src="sayang.JPEG" alt="Foto 4">
+    </div>
+
+    <div class="message">
+Hai sayang,
+
+Di hari spesialmu ini, aku hanya ingin mengingatkan betapa kamu berarti dalam hidupku. 
+Kamu bukan hanya seseorang yang kucintai, tapi juga orang yang membuat dunia terasa lebih hangat dan indah.
+
+Semoga setiap langkahmu di usia yang baru ini dipenuhi dengan kebahagiaan, keberkahan, dan cinta yang tak pernah habis.
+
+Aku selalu bangga memiliki kamu bukan karena kesempurnaanmu, tapi karena ketulusanmu yang nyata.
+
+Sehat selalu dan Panjang umur ya cintaku, Doa ku menyertaimu sayang
+
+Empat foto ini mungkin hanya sekilas dari perjalanan kita, tapi di balik setiap senyum dan momen itu, ada cinta yang terus tumbuh.  
+Terima kasih sudah menjadi bagian dari hidupku bukan hanya hari ini, tapi setiap hari yang aku jalani bersamamu.
+
+Semoga ulang tahunmu membawa kebahagiaan yang tak berujung, dan semoga aku selalu punya kesempatan untuk membuatmu tersenyum lebih sering.
+
+<span class="signature">Dengan cinta,  
+Dede Citi</span>
+    </div>
+
+    <footer> ❤ I LOVE YOU SO MUCH BABY ❤</footer>
+  </div>
+</body>
+</html>
+z
